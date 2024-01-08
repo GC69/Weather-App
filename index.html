@@ -10,31 +10,93 @@
   <body>
     <div class="card">
       <div class="search">
-        <input
-          type="text"
-          placeholder="Enter your city name"
-          spellcheck="false"
-        />
-        <button><img src="images/search.png" alt="" /></button>
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+
+        <button><img src="images/search.png" alt="Search" /></button>
       </div>
-      <div class="weather">
-        <img src="images/rain.png" class="weather-icon" alt="rain icon" />
-        <h1 class="temp">22°C</h1>
-        <h2 class="city">Chisinau</h2>
-        <div class="details">
-          <div class="col">
-            <img src="images/humidity.png" alt="humidity icon" />
-            <div>
-              <p class="humidity">50%</p>
-              <p>Humidity</p>
-            </div>
+
+      <div class="geolocation">
+        <p class="lat">Lat:</p>
+
+        <button id="find-me" class="location">
+          <img src="images/worldwide-location.png" alt="Location" />
+        </button>
+
+        <p class="lon">Lon:</p>
+      </div>
+
+      <!-- <button id="find-me">Show my location</button><br /> -->
+      <p id="status"></p>
+      <a id="map-link" target="_blank"></a>
+
+      <h2 class="city">City Name</h2>
+
+      <div class="hours">
+        <div class="col">
+          <img src="images/sunrise.png" alt="sunrise icon" />
+
+          <div>
+            <p class="sunrise">sunrise time</p>
+
+            <p>Sunrise</p>
           </div>
-          <div class="col">
-            <img src="images/wind.png" alt="humidity icon" />
-            <div>
-              <p class="wind">5 Km/h</p>
-              <p>Wind Speed</p>
-            </div>
+        </div>
+
+        <div class="dateHour">
+          <h3 class="date">Data</h3>
+
+          <h3 class="hour">Ora</h3>
+        </div>
+
+        <div class="col">
+          <img src="images/sunset.png" alt="sunset icon" />
+
+          <div>
+            <p class="sunset">sunset time</p>
+
+            <p>Sunset</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="weather">
+        <img src="images/rain2.png" class="weather-icon" alt="rain icon" />
+
+        <p class="description">Description</p>
+
+        <p class="temp">3<span>°C</span></p>
+
+        <h2 class="tempFeel">3<span>°C</span></h2>
+      </div>
+
+      <div class="details">
+        <div class="col">
+          <img src="images/moisture.png" alt="humidity icon" />
+
+          <div>
+            <p class="humidity">30%</p>
+
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="images/wind.png" alt="humidity icon" />
+
+          <div>
+            <p class="wind">3 Km/h</p>
+
+            <p>Wind Speed</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="images/atmospheric-pressure.png" alt="pressure icon" />
+
+          <div>
+            <p class="pressure">1013 hPa</p>
+
+            <p>Pressure</p>
           </div>
         </div>
       </div>
